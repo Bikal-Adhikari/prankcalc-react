@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { CustomButton } from "./components/CustomButton";
+import aa from "./assets/audio.mp3";
 
 const operators = ["%", "/", "*", "-", "+"];
 function App() {
@@ -69,6 +70,8 @@ function App() {
   const total = () => {
     const extraVal = randomValue();
     if (extraVal) {
+      const audio = new Audio(aa);
+      audio.play();
       setIsPrank(true);
       // displayElm.classList.add("prank");
       // audio.play();
