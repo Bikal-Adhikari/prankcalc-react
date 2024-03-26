@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="wrapper flex-center">
+      <div className="calculator">
+        <div className="display arbutus-regular">0.0</div>
+        <div className="btn btn-ac">AC</div>
+        <div className="btn btn-c">C</div>
+        <div className="btn btn-per">%</div>
+        <div className="btn btn-divide">/</div>
+        <div className="btn btn-7">7</div>
+        <div className="btn btn-8">8</div>
+        <div className="btn btn-9">9</div>
+        <div className="btn btn-x">*</div>
+        <div className="btn btn-4">4</div>
+        <div className="btn btn-5">5</div>
+        <div className="btn btn-6">6</div>
+        <div className="btn btn-minus">-</div>
+        <div className="btn btn-1">1</div>
+        <div className="btn btn-2">2</div>
+        <div className="btn btn-3">3</div>
+        <div className="btn btn-plus">+</div>
+        <div className="btn btn-0">0</div>
+        <div className="btn btn-dot">.</div>
+        <div className="btn btn-equal">=</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
